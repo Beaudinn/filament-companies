@@ -154,8 +154,8 @@ class FilamentCompaniesServiceProvider extends ServiceProvider
         }
 
         if (Features::hasCompanyFeatures()) {
-            $pages[] = CompanySettings::class;
             $pages[] = CreateCompany::class;
+            $pages[] = CompanySettings::class;
         }
 
         return $pages;
